@@ -1,0 +1,17 @@
+{
+  "name": "magpie-upstream-guard",
+  "version": "1.0.0",
+  "description": "Magpie gateway middleware: turn a mid-stream upstream error into a clean finish so fault-intolerant clients don't break",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tastypear/magpie-upstream-guard.git"
+  },
+  "keywords": ["magpie", "magpie-plugin", "middleware"],
+  "magpie": {
+    "middleware": "./upstream-guard.middleware.js",
+    "options": {
+      "notice": "[上游端点中断] 上游在回复中途断开，本条回复按正常结束收尾。上游报错："
+    }
+  }
+}
